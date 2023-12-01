@@ -1,0 +1,42 @@
+@use '@angular/material' as mat;
+@use '../../../variables.scss' as var;
+
+
+:host {
+    display: flex;
+    padding: 20px;
+
+    .totals-table {
+        width: auto;
+      }
+
+    .mini {
+        width: 180px !important;
+    }
+
+    .footer {
+        background-color: mat.get-color-from-palette(var.$app-primary);
+    }
+
+    .total-hours {
+        text-align: center;
+    }
+
+    form {
+        margin-right: 20px;
+
+        button {
+            margin-top: 20px;
+        }
+
+        mat-form-field {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+        }
+    }
+
+    .highlight {
+        background-color: mat.get-color-from-palette(var.$app-primary);
+    }
+}

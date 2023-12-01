@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    padding: 20px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    mat-card {
+        display: inline-block;
+    }
+
+    mat-card + mat-card {
+        margin-left: 20px;
+    }
+
+    mat-form-field {
+        margin-right: 10px;
+    }
+}

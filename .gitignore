@@ -1,0 +1,53 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# profiling files
+npm-debug.log
+yarn-error.log
+yarn-debug.log*
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+/tmp
+/hs_err_pid*
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# dist - build output
+/dist
+
+# dotenv environment variables file
+.env
+
+# Angular build files
+**/ngfactory.js
+**/ngstyle.js
+**/ngsummary.json
