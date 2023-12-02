@@ -111,7 +111,8 @@ export class TotalComponent implements OnInit {
 
     const thresholdMetEntries = this.factorDatasource.filter(entry => entry.thresholdMet === true);
     const lastEntry = thresholdMetEntries[thresholdMetEntries.length - 1];
-    lastEntry.selected = true;
+    if (lastEntry)
+      lastEntry.selected = true;
   }
 
   getTotalExternal() {
