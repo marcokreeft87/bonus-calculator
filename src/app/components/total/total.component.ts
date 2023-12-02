@@ -55,7 +55,7 @@ export class TotalComponent implements OnInit {
     this.form = this.fb.group({});
 
     this.months.forEach(month => {
-      this.form.addControl(month, this.fb.control(this.applicationData.internalHours?.find(m => m.name === month)!.hours));
+      this.form.addControl(month, this.fb.control(this.applicationData.internalHours?.find(m => m.name === month)?.hours));
     });
 
     this.dataSource = this.months.map(month => {
