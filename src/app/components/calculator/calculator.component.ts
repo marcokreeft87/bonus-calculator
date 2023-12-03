@@ -51,7 +51,7 @@ export class CalculatorComponent {
     this.applicationData = service.getApplicationData();
     this.clientTabs = clientService.getClients();
     this.form = fb.group({
-      grossYearSalary: [this.applicationData.grossYearSalary],
+      grossMonthSalary: [this.applicationData.grossMonthSalary],
       baseRate: [this.applicationData.baseRate],
     });
   }

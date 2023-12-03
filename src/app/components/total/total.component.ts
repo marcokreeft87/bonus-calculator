@@ -72,7 +72,7 @@ export class TotalComponent implements OnInit {
       return { 
         threshold: element, 
         factor: Factors[index], 
-        earnings: this.applicationData.grossYearSalary * Factors[index],
+        earnings: this.applicationData.grossMonthSalary * Factors[index],
         clientEarnings: 0,
         clientHours: 0
       };

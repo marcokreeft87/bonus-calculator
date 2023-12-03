@@ -1,7 +1,7 @@
 import { IMonth } from "./month";
 
 export interface IApplicationData {
-    grossYearSalary: number;
+    grossMonthSalary: number;
     baseRate: number;
     internalHours: IMonth[];
 }
